@@ -1,7 +1,8 @@
 rule-providers:
-  - name: local-rules
+  local-rules:
+    behavior: "domain"
     type: file
-    filePath: /app/profiles/flag.yml
+    path: /app/profiles/flag.yml
 
 rules:
-  - RULE-SET,local-rules
+  - RULE-SET,local-rules,PROXY
