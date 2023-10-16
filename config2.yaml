@@ -1,0 +1,7 @@
+rule-providers:
+  - name: local-rules
+    type: file
+    filePath: /app/profiles/flag.yml
+
+rules:
+  - RULE-SET,local-rules
