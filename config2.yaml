@@ -2,7 +2,3 @@ proxy-providers:
   local-rules:
     type: file
     path: /app/profiles/flag.yml
-rules:
-  - RULE-SET,local-rules,PROXY
-payload:
-  - DOMAIN-SUFFIX,pku.edu.cn
