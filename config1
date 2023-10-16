@@ -1,0 +1,10 @@
+proxy-providers:
+  local-rules:
+    type: file
+    path: /app/profiles/flag.yml
+
+proxies:
+  - name: local-rules
+
+rules:
+  - RULE-SET,local-rules,PROXY
